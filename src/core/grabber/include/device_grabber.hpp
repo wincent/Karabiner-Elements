@@ -864,10 +864,10 @@ private:
     {
       nlohmann::json data = nlohmann::json::array();
 
-      data.push_back(nlohmann::json::object({
-          {"from", nlohmann::json::object({{"key_code", "return_or_enter"}})},
-          {"to", nlohmann::json::object({{"key_code", "keypad_enter"}})},
-      }));
+      // data.push_back(nlohmann::json::object({
+      //     {"from", nlohmann::json::object({{"key_code", "return_or_enter"}})},
+      //     {"to", nlohmann::json::object({{"key_code", "keypad_enter"}})},
+      // }));
 
       data.push_back(nlohmann::json::object({
           {"from", nlohmann::json::object({{"key_code", "delete_or_backspace"}})},
